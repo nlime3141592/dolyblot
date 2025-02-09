@@ -13,7 +13,7 @@
 ## CRUD Operations
 
 ### What is CRUD?
-- CRUD is initials on word Create, Remove, Update, Delete. (4 major operations on data, 데이터에 대한 4대 연산)
+- CRUD is initials on word Create, Read, Update, Delete. (4 major operations on data, 데이터에 대한 4대 연산)
 - CRUD operations for language pack and text are support.
 
 ### CRUD for Language Pack
