@@ -1,0 +1,44 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Executable",
+            "command": "C:\\mingw32\\bin\\gcc.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${fileDirname}\\*.c",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Task to build the final executable"
+        },
+        {
+            "type": "shell",
+            "label": "Compile to Object Files",
+            "command": "C:\\mingw32\\bin\\gcc.exe",
+            "args": [
+                "-c",
+                "${fileBasenameNoExtension}.c",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Task to compile a single C file to an object file"
+        }
+    ]
+}
